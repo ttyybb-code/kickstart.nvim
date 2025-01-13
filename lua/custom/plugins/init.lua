@@ -8,12 +8,4 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
     opts = {},
   },
-  {
-    'mfussenegger/nvim-dap-python',
-    dependencies = { 'mfussenegger/nvim-dap', 'microsoft/debugpy' },
-    opts = {},
-    config = function()
-      require('dap-python').setup '/usr/local/bin/python3'
-    end,
-  },
 }

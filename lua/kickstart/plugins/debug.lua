@@ -37,7 +37,7 @@ return {
     'jay-babu/mason-nvim-dap.nvim',
 
     -- Add your own debuggers here
-    'mfussenegger/nvim-dap-python',
+    -- 'mfussenegger/nvim-dap-python',
     'leoluz/nvim-dap-go',
   },
 
@@ -84,18 +84,18 @@ return {
 
     local dapui = require 'dapui'
 
-    require('dap-python').setup '/usr/local/bin/python3'
-    dap.configurations.python = {
-      {
-        type = 'python',
-        request = 'launch',
-        name = 'Launch file',
-        program = '${file}',
-        pythonPath = function()
-          return '/usr/bin/python'
-        end,
-      },
-    }
+    --require('dap-python').setup '/usr/local/bin/python3'
+    --dap.configurations.python = {
+    --{
+    --type = 'python',
+    --request = 'launch',
+    --name = 'Launch file',
+    --program = '${file}',
+    --pythonPath = function()
+    --return '/usr/bin/python'
+    --end,
+    --},
+    --}
     require('mason-nvim-dap').setup {
 
       -- Makes a best effort to setup the various debuggers with
